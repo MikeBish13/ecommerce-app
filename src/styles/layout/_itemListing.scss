@@ -1,0 +1,52 @@
+.item-listing {
+    text-align: center;
+    @include mq(desktop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  &-img {
+    @include mq(desktop) {
+        width: 50%;
+    }
+    img {
+      border-radius: 8px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &-details {
+      @include mq(desktop) {
+          width: 40%;
+          text-align: left;
+
+          .btn {
+              margin-left: 0;
+          }
+      }
+  }
+
+  h2 {
+      max-width: 400px;
+      margin: 0 auto 1.5rem;
+      @include mq(desktop) {
+          margin-left: 0;
+      }
+  }
+
+  p {
+      max-width: 572px;
+      margin: 0 auto 1.5rem;
+  }
+
+  .new-product-txt {
+      margin-bottom: 1rem;
+  }
+
+  &:nth-child(even) {
+      @include mq(desktop) {
+          flex-direction: row-reverse;
+      }
+  }
+
+}

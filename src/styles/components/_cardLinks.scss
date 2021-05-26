@@ -1,0 +1,40 @@
+.card-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4.25rem;
+    justify-content: center;
+    align-items: center;
+
+    &-homepage {
+        margin-top: 6.75rem;
+        @include mq(tablet){
+            margin-top: 15.25rem;
+        }
+        @include mq(desktop) {
+            margin-top: 8.75rem;
+        }
+    }
+
+    &-category-page {
+        margin-bottom: 7.5rem;
+        @include mq(desktop) {
+            margin-bottom: 10rem;
+        }
+    }
+
+    &-mobile {
+        flex-direction: column;
+        background: white;
+        border-radius: 0 0 8px 8px;
+        padding: 108px 7% 67px;
+        @include mq(tablet) {
+            flex-direction: row;
+        }
+    }
+
+    @include mq(tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+}

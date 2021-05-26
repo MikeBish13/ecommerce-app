@@ -1,0 +1,80 @@
+.btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  letter-spacing: 1px;
+  font-size: 0.8125rem;
+  transition: $transition;
+}
+
+.btn-one {
+  background: $clr-orange;
+  color: $clr-white;
+
+  &:hover {
+    background: $clr-orange-light;
+  }
+}
+
+.btn-two {
+  color: $clr-black;
+  border: 1px solid $clr-black;
+
+  &:hover {
+    background: $clr-black;
+    color: $clr-white;
+  }
+}
+
+.btn-three {
+  color: $clr-white;
+  background: $clr-black;
+
+  &:hover {
+    background: $clr-btn-three-hover;
+  }
+}
+
+.btn-four {
+  position: relative;
+  text-decoration: none;
+  color: #00000050;
+  &::after {
+    content: url("../assets/shared/desktop/icon-arrow-right.svg");
+    margin-left: 13px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-40%);
+  }
+
+  &:hover {
+      color: $clr-orange;
+  }
+}
+
+.btn-back,
+.btn-clear {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #00000083;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+  position: relative;
+  transition: $transition;
+
+  &:hover {
+    color: $clr-orange;
+  }
+}
+
+.btn-clear {
+  text-decoration: underline;
+}

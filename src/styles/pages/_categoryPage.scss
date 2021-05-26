@@ -1,0 +1,27 @@
+.category-page {
+  &-head {
+    background: $clr-black;
+    color: $clr-white;
+    text-align: center;
+    padding: 2rem 0;
+    @include mq(tablet) {
+      padding: 6.5625rem 0 6rem;
+    }
+    @include mq(desktop) {
+      padding: 6rem 0;
+    }
+  }
+  &-products {
+    margin: 7.5rem auto;
+  }
+
+  .product-listing {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li:not(:last-of-type) {
+      margin-bottom: 7rem;
+    }
+  }
+}

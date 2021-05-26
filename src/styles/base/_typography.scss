@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  line-height: 1.03;
+  letter-spacing: 2px;
+
+  @include mq(tablet) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: $fw-bold;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  @include mq(tablet) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: $fw-bold;
+  line-height: 1.125;
+  letter-spacing: 1.15px;
+  text-transform: uppercase;
+
+  @include mq(tablet) {
+    font-size: 2rem;
+  }
+}
+
+h4 {
+  font-size: 1.75rem;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  line-height: 1.35;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  line-height: 1.35;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 0.9375rem;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  line-height: 1.35;
+  letter-spacing: 1.7px;
+  @include mq(desktop) {
+    font-size: 1.125rem;
+  }
+}
+
+.sub-title {
+  font-size: 0.8125rem;
+  font-weight: $fw-bold;
+  color: $clr-orange;
+  line-height: 1.9;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.new-product-txt {
+  color: $clr-orange;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 10px;
+  line-height: 1.35;
+}
+
+p {
+  font-size: 0.9375rem;
+  font-weight: $fw-med;
+  line-height: 1.6;
+}
+
+.main-para {
+  color: #00000079;
+}
+
+.main-para-light {
+  color: #ffffff79;
+}
+
+.para-bold {
+  font-weight: $fw-bold;
+  color: #000000;
+  font-size: 1.125rem;
+  letter-spacing: 1.29px;
+
+  &-orange {
+    color: $clr-orange;
+  }
+}

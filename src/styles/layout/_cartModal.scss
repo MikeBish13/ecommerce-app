@@ -1,0 +1,75 @@
+.cart-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background: rgba(71, 71, 71, 0.363);
+    padding: 1.5rem 6.5%;
+    right: 0;
+    top: 79px;
+    .cart-box {
+        background: white;
+        border-radius: 8px;
+        padding: 2rem 1.75rem;
+        max-width: 377px;
+        @include mq(tablet) {
+            margin-left: auto;
+        }
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .add-controls-selection-cart {
+            button, div {
+                height: 32px;
+                width: 32px;
+            }
+        }
+
+        &-middle {
+            margin: 2rem 0;
+        }
+
+        &-middle-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            &-details {
+                margin-right: auto;
+                margin-left: 1rem;
+            }
+
+            &-name {
+                font-weight: $fw-bold;
+                color: $clr-black;
+            }
+
+            &-price {
+                font-weight: $fw-bold;
+                color: #0000007c;
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            &-total {
+                text-transform: uppercase;
+                color: #0000007c;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

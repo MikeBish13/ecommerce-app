@@ -1,0 +1,29 @@
+.add-controls {
+    display: flex;
+    max-width: 296px;
+}
+.add-controls-selection {
+    display: flex;
+    width: max-content;
+    button {
+        width: 40px;
+        height: 48px;
+        border: none;
+        cursor: pointer;
+        color: #0000003d;
+        display: block;
+        &:hover {
+            color: $clr-orange;
+        }
+    }
+    div {
+        display: block;
+        width: 40px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $clr-dark-gray;
+        font-size: 13px;
+    }
+}

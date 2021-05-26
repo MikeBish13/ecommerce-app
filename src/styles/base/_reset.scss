@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    width: 87%;
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+
+
+.img-thumbnail {
+    width: 65px;
+    height: 64px;
+    border-radius: 8px;
+}
+

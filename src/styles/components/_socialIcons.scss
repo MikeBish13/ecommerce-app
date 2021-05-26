@@ -1,0 +1,18 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  svg {
+    cursor: pointer;
+    path {
+      transition: $transition;
+    }
+    &:hover {
+      path {
+        fill: $clr-orange;
+      }
+    }
+  }
+}
